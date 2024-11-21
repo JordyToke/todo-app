@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.taskform {
+  font-size: small;
+  /* flex column layout of form elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 240px;
+  /* width */
+  width: 50%;
+  min-width: 280px;
+  /* center and move down from top of page */
+  margin: 5vh auto;
+  /* add some padding */
+  padding: 16px;
+  border-radius: 16px;
+  background-color: peachpuff;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  margin: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
+}
+
+label {
+  &::after {
+    content: ':'
+  }
+}
